@@ -39,7 +39,7 @@ background: grey;
 
 /** GLOBAL STYLES **/
 
-h1 { font-family: 'Amatic SC', cursive; margin: 0  0 1em 0; font-weight: 700; text-align: center; font-size: 10em; color: #E1C0E0; text-shadow: 3px 10px #fff;}
+h1 { font-family: 'Amatic SC', cursive; margin: 0  0 1em 0; font-weight: 700; text-align: center; font-size: 8em; color: #E1C0E0; text-shadow: 2px 1px #000;}
 h2 { font-family: 'Amatic SC', cursive; margin: 0em  0 0em 0; font-size: 2em; font-weight: 700;  text-align: center; color: #fff;}
 h3 {   font-family: 'Comfortaa', cursive; margin: 0em  0 1em 0; font-size: 1.3em; font-weight: 400; color:#fff;  color: #E6C5E5;text-shadow: 1px 1px #fff;}
 h4 {  font-family: 'Comfortaa', cursive; margin: 1.5em  0 1em 0; font-size: 1em; font-weight: 400; }
@@ -118,11 +118,11 @@ body {
 
 /*.about .alignright { background: #949494; float: left; }*/
 
-.Albums{ background-color: #27263F; padding-top: 10px; }
+.Albums{ background-color: #fff; padding-top: 10px; border: 20px solid rgba(24, 131, 189, .40); }
 
 /*.albumncover { align-items: left; }*/
 
-form{ font-weight: 700; font-size: 1em; color: #7FCBF4; padding-left: 20px; padding-right: 20px; }
+form{ font-weight: 700; font-size: 1em; color: #000; padding-left: 20px; padding-right: 20px; }
 
 form label { font-size: 1.2em; }
 
@@ -140,7 +140,7 @@ display: inline-block;
 padding: 0;
 }
 
-dd { font-size:1.3em; }
+dd { font-size:1.3em; color: #000; font-weight: 700; }
 dt dd { list-style: none; padding: 0; }
 
 /** CARDS2 TOUR DATES**/
