@@ -107,7 +107,7 @@ body {
 .aboutmini p {background-color: rgba(254, 199, 248, 1.0); color: #000; 
     padding: 20px;
     position: absolute;
-       top: 1100px;
+       top: 1000px;
        right: 0;
        width: 800px;
        height: 500px;
@@ -225,6 +225,14 @@ dt dd { list-style: none; padding: 0; }
 
     .cards img { width: 50%; }
 
+    .about div p { width: 50%; position: absolute;
+       top: 300px;
+       right: 0;
+       
+       height: 850px; }
+
+    .Albums { position: absolute; top: 1200px; }
+
     .albumnlist { text-align: center; width: 360px; }
 
     .AlbumnName  { display: block; padding-left: 40px; }
@@ -234,7 +242,10 @@ dt dd { list-style: none; padding: 0; }
 
     img { width: 300px; float: none; align-content: center; }
 
-   
+   .form { position: absolute; top: 5850px; width: 100%;}
+
+    .Footer { position: absolute; top: 6700px; }
+
 }
 
 }
