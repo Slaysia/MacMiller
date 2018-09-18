@@ -199,8 +199,9 @@ dt dd { list-style: none; padding: 0; }
 
      a:focus .caption-title,
      a:hover .caption-title{ color: #E1C0E0; text-shadow: 1px 1px #fff; padding: 0 50 50 50; }
-        
-       
+      
+    
+
        }
 	}
 
@@ -212,28 +213,42 @@ dt dd { list-style: none; padding: 0; }
 
 	}
 
+@media screen and (max-width: 800px){
+    .about div p { width: 700px; position: absolute;
+         top: 850px;
+         right: 0;
+         height: 300px; }  
+       
+    .about img { width: 60%; }
+
+
+
+
+}
+
 @media screen and (max-width: 650px) {
-    body { width: 414px; }
+    body { width: 100%; }
 
     h1 { font-size: 2em; text-align: left; }
 
     .caption { padding: 0;}
 
-    .caption-title {  width: 80px; height: 20px; font-size: .7em; }
+    .caption-title {  width: 100%; height: 20px; font-size: .7em; }
 
     .cards { grid-template-columns: repeat(1, 1fr) }
 
     .cards img { width: 50%; }
 
-    .about div p { width: 50%; position: absolute;
-       top: 300px;
+    .about img { width: 100%; }
+    .about div p { width: 100%; position: absolute;
+       top: 590px;
        right: 0;
-       
-       height: 850px; }
+       width: 100%;
+       height: 450px; }
 
-    .Albums { position: absolute; top: 1200px; }
+    .Albums { position: absolute; top: 1050px; width: 100%; }
 
-    .albumnlist { text-align: center; width: 360px; }
+    .albumnlist { text-align: center; width: 100%; }
 
     .AlbumnName  { display: block; padding-left: 40px; }
 
@@ -242,9 +257,9 @@ dt dd { list-style: none; padding: 0; }
 
     img { width: 300px; float: none; align-content: center; }
 
-   .form { position: absolute; top: 5850px; width: 100%;}
+   .form { position: absolute; top: 5720px; width: 100%;}
 
-    .Footer { position: absolute; top: 6700px; }
+    .Footer { position: absolute; top: 6600px; }
 
 }
 
