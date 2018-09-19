@@ -64,7 +64,7 @@ h1 {
 body {
 /*  padding-top: 40px;*/
     padding:0px;
-  background: #ffff;
+  background: #fff;
     min-height: 100%;
 }
 
@@ -157,7 +157,7 @@ dt dd { list-style: none; padding: 0; }
     .caption-title{ padding: 20px 50px; font-size: .8em; text-align: center; background: #585858; }
 
      a:focus .caption-title,
-     a:hover .caption-title{ color: #E1C0E0; text-shadow: 1px 1px #fff; padding: 0 50 50 50; }
+     a:hover .caption-title{ color: #E1C0E0; text-shadow: 1px 1px #fff; padding: 0; }
       
     
 
@@ -262,8 +262,4 @@ dt dd { list-style: none; padding: 0; }
    .form { position: absolute; top: 5833px; width: 100%;}
 
     .Footer { position: absolute; top: 6700px; }
-
 }
-
-}
-
