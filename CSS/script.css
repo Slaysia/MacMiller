@@ -116,13 +116,9 @@ form label { font-size: 1.2em; }
 .Footer p { font-size: 1em; }
 
 /*inside the grid styles*/
-nav {
-/*display: grid;*/
-list-style: none;
-display: inline-block;
-padding: 0;
-}
-
+nav { list-style: none; display: inline-block; padding: 0; width: 100%; }
+nav .navbar-brand { margin-top: 20px; padding-left: 20px;}
+nav .navbar-nav { float: right; padding-right: 20px; margin-bottom: 40px;}
 li { font-size:1.3em; color: #000; font-weight: 700; }
 ul li { list-style: none; padding: 0; }
 
@@ -194,8 +190,8 @@ ul li { list-style: none; padding: 0; }
            
         .about img { width: 60%; }
         .Albums { position: absolute; width: 100%; top: 1200px; }
-        .form { position: absolute; top: 4770px; width: 100%;}
-        .Footer { position: absolute; top: 5570px; width: 100%; }
+        .form { position: absolute; top: 3734px; width: 100%;}
+        .Footer { position: absolute; top: 4170px; width: 100%; }
 
 
     }
@@ -208,8 +204,8 @@ ul li { list-style: none; padding: 0; }
            
         .about img { width: 60%; }
         .Albums { position: absolute; width: 100%; top: 1200px; }
-        .form { position: absolute; top: 4770px; width: 100%;}
-        .Footer { position: absolute; top: 5570px; width: 100%; }
+        .form { position: absolute; top: 3734px; width: 100%;}
+        .Footer { position: absolute; top: 4160px; width: 100%; }
 
 
     }
@@ -222,8 +218,8 @@ ul li { list-style: none; padding: 0; }
        
     .about img { width: 60%; }
     .Albums { position: absolute; width: 100%; top: 1200px; }
-    .form { position: absolute; top: 4770px; width: 100%;}
-    .Footer { position: absolute; top: 5570px; width: 100%; }
+    .form { position: absolute; top: 3734px; width: 100%;}
+    .Footer { position: absolute; top: 4170px; width: 100%; }
 
 
 }
@@ -242,10 +238,9 @@ ul li { list-style: none; padding: 0; }
     .cards img { width: 50%; }
 
     .about img { width: 100%; }
-    .about div p { width: 100%; position: absolute;
+    .about div p { width: 100%;
        top: 605px;
        right: 0;
-       width: 100%;
        height: 420px; }
 
     .Albums { position: absolute; top: 1050px; width: 100%; }
@@ -259,12 +254,18 @@ ul li { list-style: none; padding: 0; }
 
     img { width: 300px; float: none; align-content: center; }
 
-   .form { position: absolute; top: 5833px; width: 100%;}
+   .form { position: absolute; top: 3534px; width: 100%;}
 
-    .Footer { position: absolute; top: 6700px; }
+    .Footer { position: absolute; top: 3955px; }
 }
-
-
+@media screen and (max-width: 600px){
+    .form { position: absolute; top: 4906px; width: 100%; }
+    .Footer { position: absolute; top:5342px; }
+}
+@media screen and (max-width: 399px){
+    .form { position: absolute; top: 4941px; width: 100%; }
+    .Footer { position: absolute; top:5392px; }
+}
 
 /******* ALBUM SPECIFIC  *******/
 
