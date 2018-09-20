@@ -116,12 +116,33 @@ form label { font-size: 1.2em; }
 
 .Footer p { font-size: 1em; }
 
-/*inside the grid styles*/
-nav { list-style: none; display: inline-block; padding: 0; width: 100%; }
-nav .navbar-brand { margin-top: 20px; padding-left: 20px;}
-nav .navbar-nav { float: right; padding-right: 20px; margin-bottom: 40px;}
-li { font-size:1.3em; color: #000; font-weight: 700; }
-ul li { list-style: none; padding: 0; }
+/* NAVIGATION */
+nav {
+  margin-top: 40px;
+  padding: 24px;
+  text-align: center;
+  font-family: Raleway;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+#nav-1 {
+  background: #FEC7F8;
+}
+.link-1 {
+  transition: 0.3s ease;
+  background: #FEC7F8;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  padding: 20px 0;
+  margin: 0 20px;
+}
+.link-1:hover {
+  border-top: 4px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
+  padding: 6px 0; 
+}
 
 
 /***********************************/
