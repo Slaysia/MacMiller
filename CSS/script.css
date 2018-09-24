@@ -6,7 +6,7 @@ https://splinternews.com/the-irresistible-charm-and-talent-of-hinds-the-girl-ba-
 
 
 */
-/********************************************************** 
+/**********************************************************
 black - #000
 white- #fff
 DARK grey - #949494
@@ -18,9 +18,9 @@ light grey - #E7E7E7
 tan - #E9CEBC
 dingy blue - #718a94
 
-Link Color: 
-Link Color Visited: 
-Link Color Hover: 
+Link Color:
+Link Color Visited:
+Link Color Hover:
 Link Hover Background Color:
 
 font-family: 'Amatic SC', cursive;
@@ -87,7 +87,7 @@ body {
 #nav-1 h2 { display: inline; }
 .about { background-color: rgba(24, 131, 189, .40); padding-top: 10px;}
 .about img { padding-bottom: 20px;  }
-.aboutmini p {background-color: rgba(254, 199, 248, 1.0); color: #000; 
+.aboutmini p {background-color: rgba(254, 199, 248, 1.0); color: #000;
     padding: 20px;
     position: absolute;
        top: 1000px;
@@ -148,18 +148,18 @@ nav {
     .link-1:hover {
       border-top: 4px solid #ffffff;
       border-bottom: 4px solid #ffffff;
-      padding: 6px 0; 
+      padding: 6px 0;
     }
 
 /***********************************/
 @supports (grid-area: auto) {
 
- 
-         
+
+
     @media screen and (min-width: 10em) {
-        .card>img{ object-fit: cover; width: 100%; 
+        .card>img{ object-fit: cover; width: 100%;
         }
-        .HEADER>img { object-fit: cover;  width: 100%; 
+        .HEADER>img { object-fit: cover;  width: 100%;
         }
         .cards {display: grid; grid-template-columns: repeat(2, 1fr);grid-gap: 1em; padding: 0; margin:0; }
 
@@ -177,13 +177,13 @@ nav {
 
     a:focus h3,
     a:hover h3 {color: #E1C0E0;}
-        
+
     .caption-title{ padding: 20px 50px; font-size: .8em; text-align: center; background: #585858; }
 
      a:focus .caption-title,
      a:hover .caption-title{ color: #E1C0E0; text-shadow: 1px 1px #fff; padding: 0; }
-      
-    
+
+
 
        }
     }
@@ -191,19 +191,19 @@ nav {
     @media screen and (min-width: 60em) {
 
         .cards { grid-template-columns: repeat(4, 1fr); }
-        
+
     .caption-title{ padding: 20px 50px; font-size: 1em; }
 
     }
 
-    
+
     @media screen and (max-width: 999px){
         .link-1 { font-size: 15px;}
         .about div p { width: 700px; position: absolute;
              top: 850px;
              right: 0;
-             height: 300px; }  
-           
+             height: 300px; }
+
         .about img { width: 60%; }
         .Albums { position: absolute; width: 100%; top: 1200px; }
         .form { position: absolute; top: 3934px; width: 100%;}
@@ -227,8 +227,8 @@ nav {
         .about div p { width: 700px; position: absolute;
              top: 850px;
              right: 0;
-             height: 300px; }  
-           
+             height: 300px; }
+
         .about img { width: 60%; }
         .Albums { position: absolute; width: 100%; top: 1200px; }
         .form { position: absolute; top: 3934px; width: 100%;}
@@ -238,11 +238,11 @@ nav {
     }
 @media screen and (max-width: 745px){
    .form { position: absolute; top: 3972px; width: 100%;}
-   .Footer { position: absolute; top: 4770px; width: 100%; } 
+   .Footer { position: absolute; top: 4770px; width: 100%; }
 }
 @media screen and (max-width: 721px){
    .form { position: absolute; top: 4010px; width: 100%;}
-   .Footer { position: absolute; top: 4800px; width: 100%; } 
+   .Footer { position: absolute; top: 4800px; width: 100%; }
 }
 @media screen and (max-width: 700px){
      .link-1 { font-size: 12px;
@@ -260,7 +260,7 @@ nav {
     .about div p { width: 700px; position: absolute;
          top: 850px;
          right: 0;
-         height: 300px; }   
+         height: 300px; }
     .about img { width: 60%; }
     .Albums { position: absolute; width: 100%; top: 1200px; }
     .form { position: absolute; top: 4010px; width: 100%;}
