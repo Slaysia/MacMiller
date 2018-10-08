@@ -379,18 +379,18 @@ nav {
 
 @media screen and (max-width:485px){
   .about div p { width: 400px; position: absolute;
-       top: 600px;
+       top: 560px;
        right: 0;
-       height: 450px;
+       height: 480px;
        font-size: .9em; }
     .about img { width: 100%; }
 }
 @media screen and (max-width:414px){
   .about h1 { padding-left: 70px;}
   .about div p { width: 400px; position: absolute;
-       top: 600px;
+       top: 550px;
        right: 0;
-       height: 450px;
+       height: 500px;
        font-size: .9em; }
     .about img { width: 100%; }
     .form { position: absolute; top: 5206px; width: 100%; }
