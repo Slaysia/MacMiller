@@ -39,9 +39,9 @@ background: grey;
 
 /** GLOBAL STYLES **/
 
-h1 { font-family: 'Amatic SC', cursive; margin: 0  0 1em 0; font-weight: 700; text-align: center; font-size: 8em; color: #E1C0E0; text-shadow: 2px 1px #000;}
-h2 { font-family: 'Amatic SC', cursive; margin: 0em  0 0em 0; font-size: 2em; font-weight: 700;  text-align: center; color: #fff;}
-h3 {   font-family: 'Comfortaa', cursive; margin: 0em  0 1em 0; font-size: 1.3em; font-weight: 400; color:#fff;  color: #E6C5E5;text-shadow: 1px 1px #fff;}
+h1 { font-family: 'Amatic SC', cursive; margin: 0  0 1em 0; font-weight: 700; text-align: center; font-size: 8em; color: #1d6ab7;}
+h2 { font-family: 'Amatic SC', cursive; margin: 0em  0 0em 0; font-size: 2em; font-weight: 700;  text-align: center; color: #1d6ab7;}
+h3 {   font-family: 'Comfortaa', cursive; margin: 0em  0 1em 0; font-size: 1.3em; font-weight: 400; color:#fff;  color: #E6C5E5;}
 h4 {  font-family: 'Comfortaa', cursive; margin: 1.5em  0 1em 0; font-size: 1em; font-weight: 400; }
 
 p {  font-family: 'Comfortaa', cursive; margin: 0 0 1em 0; text-align: center; font-size: 1em; color: #E1C0E0; }
@@ -52,7 +52,9 @@ a:visited { color: #fff; }
 h1 {
     margin: 0;
     padding: 0;
+
 }
+
 
 /** NAV **/
 .caption-title {
@@ -64,7 +66,7 @@ h1 {
 body {
 /*  padding-top: 40px;*/
     padding:0px;
-  background: #fff;
+  background: #000;
     min-height: 100%;
     width: 100%;
 }
@@ -72,6 +74,7 @@ body {
 /* Cover Image*/
 .container {
     position: relative;
+    width: 100%;
 }
 
 /* Bottom right text */
@@ -85,21 +88,21 @@ body {
     padding-right: 20px;
 }
 #nav-1 h2 { display: inline; }
-.about { background-color: rgba(24, 131, 189, .40); padding-top: 10px;}
+.about { background-color: #000; padding-top: 10px;}
 .about img { padding-bottom: 20px;  }
-.aboutmini p {background-color: rgba(254, 199, 248, 1.0); color: #000;
+.aboutmini p {background-color: #347ec9; color: #fff; font-weight: 700;
     padding: 20px;
     position: absolute;
        top: 1000px;
        right: 0;
        width: 800px;
        height: 500px;
-      box-shadow: 15px 15px #fff;
+      box-shadow: 15px 15px #000;
 }
 
 /** ALBUMS **/
 
-.Albums{ background-color: #fff; padding-top: 10px; border: 20px solid rgba(24, 131, 189, .40); }
+.Albums{ background-color: #fff; padding-top: 10px; border: 20px solid black; }
 .Albums h3 { text-shadow: 1px 1px #000;  padding-left:20px;}
 .Albums dd { padding-left: 5px; }
 .Albums img { padding-left: 20px; }
@@ -117,7 +120,7 @@ form label { font-size: 1.2em; }
 
 
 /** FOOTER **/
-.Footer { background: #949494; }
+.Footer { background: #000; }
 
 .Footer h2 { color: #Fff; }
 
