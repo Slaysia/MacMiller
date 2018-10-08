@@ -88,14 +88,14 @@ body {
     padding-right: 20px;
 }
 #nav-1 h2 { display: inline; }
-.about { background-color: #000; padding-top: 10px;}
+.about { background-color: #000; padding-top: 10px; width: 100%;}
 .about img { padding-bottom: 20px;  }
 .aboutmini p {background-color: #347ec9; color: #fff; font-weight: 700;
     padding: 20px;
     position: absolute;
-       top: 1000px;
+       top: 1100px;
        right: 0;
-       width: 800px;
+       width: 500px;
        height: 500px;
       box-shadow: 15px 15px #000;
 }
@@ -202,7 +202,7 @@ nav {
 
     @media screen and (max-width: 999px){
         .link-1 { font-size: 15px;}
-        .about div p { width: 700px; position: absolute;
+        .about div p { width: 800px; position: absolute;
              top: 850px;
              right: 0;
              height: 300px; }
@@ -227,7 +227,7 @@ nav {
         .link-1:hover {  border-top: 3px solid #ffffff;
           border-bottom: 3px solid #ffffff;
           padding: 1px 0; }
-        .about div p { width: 700px; position: absolute;
+        .about div p { width: 800px; position: absolute;
              top: 850px;
              right: 0;
              height: 300px; }
@@ -240,10 +240,18 @@ nav {
 
     }
 @media screen and (max-width: 745px){
+  .about div p { width: 700px; position: absolute;
+       top: 850px;
+       right: 0;
+       height: 400px; }
    .form { position: absolute; top: 3972px; width: 100%;}
    .Footer { position: absolute; top: 4770px; width: 100%; }
 }
 @media screen and (max-width: 721px){
+  .about div p { width: 700px; position: absolute;
+       top: 850px;
+       right: 0;
+       height: 400px; }
    .form { position: absolute; top: 4010px; width: 100%;}
    .Footer { position: absolute; top: 4800px; width: 100%; }
 }
@@ -260,10 +268,10 @@ nav {
     .link-1:hover {  border-top: 3px solid #ffffff;
       border-bottom: 3px solid #ffffff;
       padding: 1px 0; }
-    .about div p { width: 700px; position: absolute;
-         top: 850px;
+    .about div p { width: 600px; position: absolute;
+         top: 780px;
          right: 0;
-         height: 300px; }
+         height: 400px; }
     .about img { width: 60%; }
     .Albums { position: absolute; width: 100%; top: 1200px; }
     .form { position: absolute; top: 4010px; width: 100%;}
@@ -300,7 +308,7 @@ nav {
     .cards img { width: 50%; }
 
     .about img { width: 100%; }
-    .about div p { width: 350px; top: 605px; right: 0; height: 420px; }
+    .about div p { width: 600px; top: 605px; right: 0; height: 420px; }
 
     .Albums { position: absolute; top: 1050px; width: 100%; }
 
@@ -318,12 +326,17 @@ nav {
 }
 
 @media screen and (max-width: 625px){
+  .about div p { width: 600px; position: absolute;
+       top: 600px;
+       right: 0;
+       height: 400px; }
     .form { position: relative; top: 2933px; width: 100%;}
 
      .Footer { position:relative; top: 2920px; }
 }
 
 @media screen and (max-width: 600px){
+  .about h1 { padding-left: 70px;}
      .link-1 { font-size: 12px;
     transition: 0.3s ease;
     background: #FEC7F8;
@@ -336,18 +349,42 @@ nav {
     .link-1:hover {  border-top: 3px solid #ffffff;
       border-bottom: 3px solid #ffffff;
       padding: 1px 0; }
+      .about div p { width: 500px; position: absolute;
+           top: 600px;
+           right: 0;
+           height: 400px;
+           font-size: .9em; }
     .form { position: relative; top: 4433px; width: 100%; }
     .Footer { position: relative; top:4410px; }
 }
 
 @media screen and (max-width: 575px){
+  .about h1 { padding-left: 70px;}
+  .about div p { width: 500px; position: absolute;
+       top: 600px;
+       right: 0;
+       height: 400px;
+       font-size: .9em; }
     .Footer { position: absolute; top:6060px; }
 }
 @media screen and (max-width:414px){
+  .about h1 { padding-left: 70px;}
+  .about div p { width: 400px; position: absolute;
+       top: 600px;
+       right: 0;
+       height: 450px;
+       font-size: .9em; }
     .form { position: absolute; top: 5206px; width: 100%; }
     .Footer { position: absolute; top:6059px; }
 }
 @media screen and (max-width: 400px){
+  .about h1 { padding-left: 70px;}
+  .about img { display: none; }
+  .about div p { width: 300px; position: absolute;
+       top: 400px;
+       right: 0;
+       height: 700px;
+       font-size: .9em; }
      .link-1 { font-size: 12px;
     transition: 0.3s ease;
     background: #FEC7F8;
