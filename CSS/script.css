@@ -40,7 +40,7 @@ background: grey;
 /** GLOBAL STYLES **/
 
 h1 { font-family: 'Amatic SC', cursive; margin: 0  0 1em 0; font-weight: 700; text-align: center; font-size: 8em; color: #1d6ab7;}
-h2 { font-family: 'Amatic SC', cursive; margin: 0em  0 0em 0; font-size: 2em; font-weight: 700;  text-align: center; color: #1d6ab7;}
+h2 {  font-family: 'Amatic SC', cursive; margin: 0em  0 0em 0; font-size: 2em; font-weight: 700;  text-align: center; color: #1d6ab7; padding-bottom: 15px;}
 h3 {   font-family: 'Comfortaa', cursive; margin: 0em  0 1em 0; font-size: 1.3em; font-weight: 400; color:#fff;  color: #E6C5E5;}
 h4 {  font-family: 'Comfortaa', cursive; margin: 1.5em  0 1em 0; font-size: 1em; font-weight: 400; }
 
@@ -61,6 +61,7 @@ h1 {
 /*    border: solid 2px #E1C0E0;*/
     border-radius: 25px;
 }
+
 /** BODY **/
 
 body {
@@ -87,7 +88,7 @@ body {
     padding-left: 20px;
     padding-right: 20px;
 }
-#nav-1 h2 { display: inline; }
+/*#nav-1 h2 { display: inline; }*/
 .about { background-color: #000; padding-top: 10px; width: 100%;}
 .about img { padding-bottom: 20px; width: 100%;  }
 .aboutmini p {background-color: #347ec9; color: #fff; font-weight: 700;
@@ -127,32 +128,29 @@ form label { font-size: 1.2em; }
 .Footer p { font-size: 1em; }
 
 /** NAVIGATION **/
-nav {
+    nav {
       margin-top: 40px;
-      padding: 24px;
+      padding: 20px;
       text-align: center;
       font-family: Raleway;
       box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
     }
-    #nav-1 {
-      background: #FEC7F8;
-    }
+    nav .tabs { padding-top:10px; padding-bottom: 10px; }
+
+    #nav-1 { background: #FEC7F8; }
+
     .link-1 {
       transition: 0.3s ease;
       background: #FEC7F8;
       color: #ffffff;
-      font-size: 20px;
+      font-size: 16px;
       text-decoration: none;
       border-top: 4px solid #fff;
       border-bottom: 4px solid #fff;
       padding: 20px 0;
       margin: 0 20px;
     }
-    .link-1:hover {
-      border-top: 4px solid #ffffff;
-      border-bottom: 4px solid #ffffff;
-      padding: 6px 0;
-    }
+    .link-1:hover { border-top: 4px solid #ffffff; border-bottom: 4px solid #ffffff; padding: 3px 0; }
 
 /***********************************/
 @supports (grid-area: auto) {
@@ -201,7 +199,7 @@ nav {
 
 
     @media screen and (max-width: 999px){
-        .link-1 { font-size: 15px;}
+        .link-1 { font-size: 13px;}
         .about div p { width: 800px; position: absolute;
              top: 850px;
              right: 0;
@@ -213,12 +211,13 @@ nav {
         .Footer { position: absolute; top: 4740px; width: 100%; }
 
     }
-    
+
     @media screen and (max-width: 825px){
     .about img { width: 100%; }
+     .link-1 { font-size: 13px;}
     }
     @media screen and (max-width: 825px){
-        .link-1 { font-size: 12px;
+        .link-1 { font-size: 13px;
         transition: 0.3s ease;
         background: #FEC7F8;
         color: #ffffff;
@@ -245,6 +244,7 @@ nav {
 
     }
 @media screen and (max-width: 745px){
+   .link-1 { font-size: 13px;}
   .about div p { width: 700px; position: absolute;
        top: 850px;
        right: 0;
@@ -254,6 +254,7 @@ nav {
    .Footer { position: absolute; top: 4770px; width: 100%; }
 }
 @media screen and (max-width: 721px){
+   .link-1 { font-size: 13px;}
   .about div p { width: 700px; position: absolute;
        top: 850px;
        right: 0;
@@ -263,7 +264,7 @@ nav {
    .Footer { position: absolute; top: 4800px; width: 100%; }
 }
 @media screen and (max-width: 700px){
-     .link-1 { font-size: 12px;
+     .link-1 { font-size: 13px;
     transition: 0.3s ease;
     background: #FEC7F8;
     color: #ffffff;
@@ -288,7 +289,7 @@ nav {
 }
 
 @media screen and (max-width: 650px) {
-   .link-1 { font-size: 12px;
+   .link-1 { font-size: 10px;
    transition: 0.3s ease;
    background: #FEC7F8;
    color: #ffffff;
@@ -333,6 +334,7 @@ nav {
 }
 
 @media screen and (max-width: 625px){
+   .link-1 { font-size: 10px;}
   .about div p { width: 600px; position: absolute;
        top: 600px;
        right: 0;
@@ -344,7 +346,7 @@ nav {
 
 @media screen and (max-width: 600px){
   .about h1 { padding-left: 70px;}
-     .link-1 { font-size: 12px;
+     .link-1 { font-size: 10px;
     transition: 0.3s ease;
     background: #FEC7F8;
     color: #ffffff;
@@ -386,6 +388,7 @@ nav {
     .about img { width: 100%; }
 }
 @media screen and (max-width:414px){
+  .link-1 {font-size: 9px; padding-top: 3px;}
   .about h1 { padding-left: 70px;}
   .about div p { width: 400px; position: absolute;
        top: 550px;
@@ -405,7 +408,7 @@ nav {
        height: 700px;
        font-size: .9em; }
   .about img { width: 100%; }
-     .link-1 { font-size: 12px;
+  .link-1 { font-size: 12px; padding-top: 5px;
     transition: 0.3s ease;
     background: #FEC7F8;
     color: #ffffff;
@@ -413,12 +416,26 @@ nav {
     border-top: 3px solid #fff;
     border-bottom: 3px solid #fff;
     padding: 8px 0;
-    margin: 0 10px;}
-    .link-1:hover {  border-top: 3px solid #ffffff;
+    margin: 0 5px;}
+  .link-1:hover {  border-top: 3px solid #ffffff;
       border-bottom: 3px solid #ffffff;
       padding: 1px 0; }
-    .form { position: absolute; top: 5283px; width: 100%; }
-    .Footer { position: absolute; top:6150px; }
+  .form { position: absolute; top: 5283px; width: 100%; }
+  .Footer { position: absolute; top:6150px; }
+}
+
+@media screen and (max-width: 375px) {
+  
+  .link-1 { font-size: 10px; padding-top: 5px;
+    transition: 0.3s ease;
+    background: #FEC7F8;
+    color: #ffffff;
+    text-decoration: none;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    padding: 8px 0;
+    margin: 0 2px;}
+
 }
 
 /******* ALBUM SPECIFIC  *******/
