@@ -1,19 +1,22 @@
 /*Developer: Lezette Boutin
 Table of Contents
-HEADER - Discography Redesign: MAC Miller
+HEADER - Discography Re-design: MAC Miller
 MAINCONTENT - MAC Miller band & music information
 FOOTER - copyrightht 2019
  Color Palette
-#000; - black ,
-#1E2422 - cool almost black  ******* change the colors *******
-#220120 - very dark purple,-
-#3b0238 - dark purple,
-#62045d - plum,
-#a5294c - warm cranberry,
-#88BEB1 - sage green-
-#718A94 - slate gray-   <maybe
-#d3dbde - light gray,
-#FFF; - white,
+#000 - black
+#5B3E6A - purple
+#C9F - light violet
+#CCF - lavender
+#922F44 - light wine
+#C7526B - very light wine
+#D3788C - salmon pink
+#C7526B - darker salmon pink
+#DEBAC7 - light mauve
+#FEC7F8 - pink
+#52750A - green
+#FCDB3A - yellow
+#FFF - white
 */
 /* Global styles
 ---------------------------*/
@@ -43,7 +46,7 @@ html{
 body{
 	background: #5B3E6A;
 	display: grid;
-	color: #c9f;
+	color: #C9F;
 	font-family: 'Pompiere', cursive;
 	font-size: 1em;
 	font-weight: bold;
@@ -58,11 +61,11 @@ h1, h2, h3, h4, h5, h6, script{
 	font-family: 'Shadows Into Light', cursive;
 	font-size: 200%;
 	font-weight: bold;
-	text-shadow: 2px 2px #000, -1px -1px #d3788c;
+	text-shadow: 2px 2px #000, -1px -1px #D3788C;
 	text-transform: uppercase;
 }
 p{
-	color: #c9f;
+	color: #C9F;
 	font-size: 1em;
 }
 .container{
@@ -86,26 +89,18 @@ p{
 }
 :root{
 	--primary-color: #52750A;
-	--FEC7F8: #ccf;
+	--FEC7F8: #CCF;
 }
 
 /* Header styling
 ---------------------------*/
 .container img{
 	grid-row: 2;
-	/*grid-column: 2/12;*/
-	/*position: relative;*/
-	/*margin: 0 -4% 0 4%;*/
-	/*vertical-align: top;*/
-	/*justify-content: end;*/
-	/*z-index: -6;*/
 	width: 399px;
 	}
 .text-block{
 	background: #52750A;
-	/*grid-column: 1/3;
-	grid-row: 1;*/
-	border-bottom: 4px double #fcdb3a;
+	border-bottom: 4px double #FCDB3A;
 	position: absolute;
 	top: .6em;
 	left: 0;
@@ -140,8 +135,12 @@ p{
 	height: 57%;
 	margin-top: 3em;
 	padding-top: .3em;
-	background-color: #ccf;
-	border-left: 4px double #fcdb3a;
+	background-color: #CCF;
+	border-left: 4px double #FCDB3A;
+	-webkit-position: sticky;
+	position: sticky;
+	top: 0;
+	right: 0;
 }
 #nav-1, ul{
 	position: sticky;
@@ -154,7 +153,7 @@ p{
 	z-index: 60;
 }
 a{
-	color: /*#700A18*/#922F44;
+	color: #922F44;
 	font-family: 'Shadows Into Light', cursive;
 	font-size: 110%;
 	font-weight: bold;
@@ -168,16 +167,6 @@ a{
 	cursor: pointer;
 	text-decoration: underline;
 	color: #52750A;
-}
-.references h1{
-	margin-left: 1em;
-}
-.references p{
-	font-size: 100%;
-	margin: .2em; 
-	width: 280px;
-	word-wrap: break-word;
-	outline: 1px solid red;
 }
 .tabs{
 	display: inline-block;
@@ -239,9 +228,9 @@ form h1{
 }
 input, select, textarea, #ownername, #owneremail, #petname, 
 #Comments, #terms{
-	background-color: #debac7;
+	background-color: #DEBAC7;
 	border: 1px solid #C7526B;
-	outline: 3px solid #ccf;
+	outline: 3px solid #CCF;
 }
 legend{
 	font-size: 1.4em;
@@ -254,7 +243,7 @@ legend:before{
 	font-size: 170%;
 	font-weight: bold;
 	margin-left: .2em;
-	text-shadow: 2px 2px #000, -1px -1px #d3788c;
+	text-shadow: 2px 2px #000/*, -1px -1px #C7526B*/;
 	text-transform: uppercase;
 	white-space: pre;
 }
@@ -274,6 +263,28 @@ legend:before{
 .Footer p{
 	font-size: .88em;
 	margin-bottom: 2.5%;
+}
+
+/* References page styles
+---------------------------*/
+
+.references{
+	display: grid;
+	grid-template-columns: 1fr;
+	overflow-x: hidden;
+}
+.references a:hover{
+	cursor: pointer;
+}
+.references h1{
+	margin-left: 1em;
+}
+.references p{
+	font-size: 100%;
+	margin: 0 auto;
+	padding: 0 .8em;
+	width: 100vw;
+	word-wrap: break-word;
 }
 
 /* larger screen styles 
@@ -306,6 +317,11 @@ legend:before{
 	}
 	.cell img{
 		margin-left: 60px;
+	}
+	.references p{
+		font-size: 100%;
+		margin: .2em; 
+		/*width: 280px;*/
 	}
 	ul{
 		margin: 0 0 1.4em 1.8em;
@@ -343,14 +359,14 @@ legend:before{
 	}
 	.cell h3{
 		margin-left: 2%;
-		width: 300px;
+		width: 290px;
 	}
 	.cell img{
 		margin-left: .1%;
 	}
 	.grid {
 	    display: flex;
-	    flex-direction: row;
+	    flex-direction: row; 
 	    flex-wrap: wrap;
   	}
 	.text-block{
@@ -376,19 +392,23 @@ legend:before{
 		z-index: 3;
 	}
 	ul{
-		margin: 0 0 1.4em .8em;
+		margin: 0 0 1.4em .8em; /*  I could add positioning to the ul  */
 		width: 274px;
 	}
 }
 @media screen and (min-width: 800px){
 
 	.cell h3{
-		margin-left: 2%;
 		width: 320px;
 	}
 	h1{
 		font-size: 300%;
 	}
+	legend:before{
+	content: "NEWSLETTER \A";
+	font-size: 200%;
+	white-space: pre;
+}
 	#nav-1{
 		margin-top: 4.477em;
 	}
@@ -448,6 +468,11 @@ legend:before{
 	h1, h2, h3, h5, h6{
 		font-size: 430%;
 	}
+	legend:before{
+	content: "NEWSLETTER \A";
+	font-size: 240%;
+	white-space: pre;
+}
 	#nav-1{
 		margin-top: 6.42em;
 	}
@@ -488,16 +513,30 @@ legend:before{
 		width: 5em;
 	}
 }
-@media screen and (min-width: 1600px){
+@media screen and (min-width: 1620px){
 
+	.grid {
+	    margin-right: 5.6em;
+  	}
 	.cell {
 	    width: 20%;
 	  }
+	.cell h3{
+		width: 290px;
+	}
 	ul{
 		margin: 0 0 1.4em .8em;
 		width: 280px;
 	}
 }
+@media screen and (min-width: 1680px){
+
+	.cell h3{
+		width: 320px;
+	}
+
+}
+
 
 
 
