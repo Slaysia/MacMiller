@@ -50,7 +50,6 @@ body{
 	font-family: 'Pompiere', cursive;
 	font-size: 1em;
 	font-weight: bold;
-	/*height: 100%;*/
 	letter-spacing: 1px;
 	position: relative;
 	overflow-x: hidden;
@@ -73,33 +72,25 @@ p{
 	grid-column: 1/12;
 	padding: 0;
 }
-#nav-1{
-	grid-column: 1/12;
-}
-.about{
-	grid-column: 1/12;
-}
-.Albums{
-	grid-column: 1/12;
-}
-.form{
-	grid-column: 1/12;
-}
-.Footer{
-	grid-column: 1/12;
-}
+#nav-1{grid-column: 1/12;}
+.about{grid-column: 1/12;}
+.Albums{grid-column: 1/12;}
+.form{grid-column: 1/12;}
+.Footer{grid-column: 1/12;}
 :root{
 	--primary-color: #52750A;
 	--FEC7F8: #CCF;
 }
 #circle {
-        position: absolute;
-        top: .1%;
-        width: 50px;
-        height: 50px;
-        color: transparent;
+		color: transparent;
         border: 3px solid #FEC7F8;
         border-radius: 50%;
+        position: absolute;
+        right: 0;
+        bottom: 2%;
+        width: 50px;
+        height: 50px;
+        
 }
 
 
@@ -113,13 +104,9 @@ p{
 	background: #52750A;
 	border-bottom: 4px double #FCDB3A;
 	position: absolute;
-	top: .6em;
 	left: 0;
+	top: .6em;
 	width: 3.2em;
-}
-.text-block{
-	background-image: url(images/star.svg) no-repeat bottom center;
-	background-size: 10px;
 }
 .text-block h4, .text-block p{
 	display: inline-block;
@@ -140,29 +127,7 @@ p{
 
 /* Navigation styling
 ---------------------------*/
-#nav-1{
-	grid-column: 11/12;
-	grid-row: 2;
-	height: 57%;
-	margin-top: 3em;
-	padding-top: .3em;
-	background-color: #CCF;
-	border-left: 4px double #FCDB3A;
-	-webkit-position: sticky;
-	position: sticky;
-	top: 0;
-	right: 0;
-}
-#nav-1, ul{
-	position: sticky;
-	top: 0;
-	right: 0;
-}
-.link-1{
-	color: #922F44;
-	word-wrap: break-word;
-	z-index: 60;
-}
+
 a{
 	color: #922F44;
 	font-family: 'Shadows Into Light', cursive;
@@ -171,17 +136,34 @@ a{
 	line-height: 180%;
 	margin: .1em 0 .2em 0;
 	padding: .2em .3em;
-	text-shadow: 2px 2px #000, -1px -1px #C7526B;
 	text-shadow: none;
-	z-index: 60;
-}a:hover{
+}
+a:hover{
+	color: #52750A;
 	cursor: pointer;
 	text-decoration: underline;
-	color: #52750A;
+}
+#nav-1{
+	background-color: #CCF;
+	border-left: 4px double #FCDB3A;
+	grid-column: 11/12;
+	grid-row: 2;
+	height: 60%;
+	margin-top: 3em;
+	padding-top: .3em;
+	position: -webkit-sticky;
+	position: sticky;
+	right: 0;
+	top: 0;
+}
+#nav-1, ul{
+	position: -webkit-sticky;
+	position: sticky;
+	right: 0;
+	top: 0;
 }
 .tabs{
 	display: inline-block;
-	word-wrap: break-word;
 	writing-mode: vertical-lr;
 	width: 2em;
 }
@@ -189,36 +171,26 @@ a{
 
 /* About styling
 ---------------------------*/
-.about{
-	grid-row: 2;
-}
-.about h1{
-	margin-left: .2em;
-}
+.about{grid-row: 2;}
+.about h1{margin-left: .2em;}
 .about p{
 	padding: .5em;
 	width: 83%;
-	word-wrap: 
-}
-.about img{
-	grid-row: 1;
 }
 
 /* Albums styling
 ---------------------------*/
 /*-- ****  albums  **** --*/
 
-.Albums h1{
-	margin-left: .2em;
-}
+.Albums h1{margin-left: .2em;}
 .cell h3{
 	font-size: 150%;
 	margin-left: .1em;
 	width: 250px;
 }
 ul{
-	margin: 0 0 1.4em .6em;
 	list-style: none;
+	margin: 0 0 1.4em .6em;
 	width: 276px;
 }
 
@@ -231,12 +203,10 @@ fieldset{
 	max-width: 86%;
 }
 form{
-	width: 100vw;
 	margin: 0 auto;
+	width: 100vw;
 }
-form h1{
-	display: none;
-}
+form h1{display: none;}
 input, select, textarea, #ownername, #owneremail, #petname, 
 #Comments, #terms{
 	background-color: #DEBAC7;
@@ -248,25 +218,20 @@ legend{
 	padding-top: .4em;
 }
 legend:before{
-	content: "NEWSLETTER \A";
 	color: #922F44;
+	content: "NEWSLETTER \A";
 	font-family: 'Shadows Into Light', cursive;
 	font-size: 170%;
 	font-weight: bold;
 	margin-left: .2em;
-	text-shadow: 2px 2px #000/*, -1px -1px #C7526B*/;
+	text-shadow: 2px 2px #000;
 	text-transform: uppercase;
 	white-space: pre;
 }
-#placeholder{
-	color: #000:;
-}
+#placeholder{color: #000;}
 #terms, .btn{
-	margin-left: 1em;
 	background-color: var(--primary-color);
-}
-#emailHelp{
-	text-shadow: none;
+	margin-left: 1em;
 }
 
 /* Footer styles
@@ -284,12 +249,8 @@ legend:before{
 	grid-template-columns: 1fr;
 	overflow-x: hidden;
 }
-.references a:hover{
-	cursor: pointer;
-}
-.references h1{
-	margin-left: 1em;
-}
+.references a:hover{cursor: pointer;}
+.references h1{margin-left: 1em;}
 .references p{
 	font-size: 100%;
 	margin: 0 auto;
@@ -299,41 +260,29 @@ legend:before{
 }
 
 /* larger screen styles 
-------------------------- 
- https://css-tricks.com/almanac/properties/o/object-fit/   
- https://www.sitepoint.com/bootstrap-card-component-introduction/   --*/
+-------------------------*/
+ 
 @media screen and (min-width: 400px){
 
-	.container img{
-		width: 499px;
-	}
-	form{
-		margin-bottom: 4%;
-	}
-	.text-block{
-		position: absolute;
-		top: 2em;
-		left: 0;
-		width: 3.95em;
-	}
-	.text-block h4, .text-block p{
-		line-height: 3em;
-	}
-	.text-block p{
-		margin: .2em 0 2.4em .1em;
-	}
 	.cell h3{
-	margin-left: .1em;
-	width: 340px;
+		margin-left: .1em;
+		width: 340px;
 	}
-	.cell img{
-		margin-left: 60px;
-	}
+	.cell img{margin-left: 60px;}
+	.container img{width: 499px;}
+	form{margin-bottom: 4%;}
 	.references p{
 		font-size: 100%;
 		margin: .2em; 
-		/*width: 280px;*/
 	}
+	.text-block{
+		position: absolute;
+		left: 0;
+		top: 2em;
+		width: 3.95em;
+	}
+	.text-block h4, .text-block p{line-height: 3em;}
+	.text-block p{margin: .2em 0 2.4em .1em;}
 	ul{
 		margin: 0 0 1.4em 1.8em;
 		width: 276px;
@@ -341,39 +290,52 @@ legend:before{
 } 
 @media screen and (min-width: 500px){
 
-	.cell h3{
-	width: 500px;
-	}
-	.container img{
-		width: 100%;
-	}
-	.text-block{
-		width: 4.8em;
-	}
-	.text-block h4, .text-block p{
-		line-height: 3em;
-	}
+	.cell h3{width: 400px;}
+	.container img{width: 100%;}
 	.tabs{
 		line-height: 3em;
 		width: 3.2em;
 	}
+	.text-block{width: 4.8em;}
+	.text-block h4, .text-block p{line-height: 3em;}
+}
+@media screen and (min-width: 600px){
+
+	.cell h3{width: 500px;}
+	#circle {
+        position: absolute;
+        bottom: 2%;
+        right: 50%; 
+	}
+}
+@media screen and (min-width: 630px){
+
+	.cell h3{width: 560px;}
 }
 @media screen and (min-width: 700px){
 
+	a{font-size: 120%;}
 	.Albums{
 		margin: 0 auto;
 		width: 100vw;
 	}
 	.cell{
-		width: 47%;
 		margin: 0 auto;
+		width: 47%;
 	}
 	.cell h3{
 		margin-left: 2%;
 		width: 290px;
 	}
-	.cell img{
-		margin-left: .1%;
+	.cell img{margin-left: .1%;}
+	#circle {
+        position: absolute;
+        bottom: 2.5%; 
+        right: 50%;
+    }
+	.Footer p{
+		font-size: 1em;
+		margin-left: 1em;
 	}
 	.grid {
 	    display: flex;
@@ -383,26 +345,12 @@ legend:before{
   	}
 	.text-block{
 		position: absolute;
-		top: 4em;
 		left: 0;
+		top: 4em;
 		width: 7.8em;
 	}
-	.text-block h4, .text-block p{
-		line-height: 5.4em;
-	}
-	.text-block p{
-		margin: .2em 0 3em .1em;
-	}
-	a{
-		font-size: 120%;
-	}
-	.Footer p{
-		font-size: 1em;
-		margin-left: 1em;
-	}
-	#nav-1{
-		z-index: 3;
-	}
+	.text-block h4, .text-block p{line-height: 5.4em;}
+	.text-block p{margin: .2em 0 3em .1em;}
 	ul{
 		margin: 0 0 1.4em .8em;
 		width: 274px;
@@ -410,23 +358,15 @@ legend:before{
 }
 @media screen and (min-width: 800px){
 
-	.cell h3{
-		width: 320px;
-	}
-	h1{
-		font-size: 300%;
-	}
+	.cell h3{width: 320px;}
+	h1{font-size: 300%;}
 	legend:before{
-	content: "NEWSLETTER \A";
-	font-size: 200%;
-	white-space: pre;
-}
-	#nav-1{
-		margin-top: 4.477em;
+		content: "NEWSLETTER \A";
+		font-size: 200%;
+		white-space: pre;
 	}
-	p, ul, form{
-		font-size: 1.15em;
-	}
+	#nav-1{margin-top: 4.477em;}
+	p, ul, form{font-size: 1.15em;}
 	ul{
 		margin: 0 0 1.4em 1.2em;
 		width: 330px;
@@ -434,22 +374,14 @@ legend:before{
 }
 @media screen and (min-width: 900px){
 
-	a{
-		font-size: 140%;
-	}
+	a{font-size: 140%;}
 	form{
 		margin: 0 auto 2em;
 		max-width: 800px;
 	}
-	p, ul, form{
-		font-size: 1.26em;
-	}
-	.text-block{
-		width: 8em;
-	}
-	.text-block h4, .text-block p{
-		line-height: 6em;
-	}
+	p, ul, form{font-size: 1.26em;}
+	.text-block{width: 8em;}
+	.text-block h4, .text-block p{line-height: 6em;}
 	ul{
 		margin: 0 0 1.4em 1.8em;
 		width: 340px;
@@ -457,40 +389,36 @@ legend:before{
 }
 @media screen and (min-width: 992px){
 
-	.cell{
-		width: 30%;
-	}
-	.Footer p{
-		margin-left: 10%;	
-	}
-	#nav-1{
-		z-index: 3;
-	}
+	.cell{width: 30%;}
+	#circle {
+        position: absolute;
+        bottom: 2.8%; 
+        right: 50%;
+    }
+	.Footer p{margin-left: 10%;}
 	ul{
 		margin: 0 0 1.4em 1.1em;
 		width: 330px;
 	}
 }
-
 @media screen and (min-width: 1200px){
 
-	a{
-		font-size: 180%;
-	}
-	h1, h2, h3, h5, h6{
-		font-size: 430%;
-	}
+	a{font-size: 180%;}
+	#circle {
+        position: absolute;
+        bottom: 2.7%; 
+        right: 50%;
+    }
+	h1, h2, h3, h5, h6{font-size: 430%;}
 	legend:before{
-	content: "NEWSLETTER \A";
-	font-size: 240%;
-	white-space: pre;
-}
-	#nav-1{
-		margin-top: 6.42em;
+		content: "NEWSLETTER \A";
+		font-size: 240%;
+		white-space: pre;
 	}
+	#nav-1{margin-top: 6.42em;}
 	.tabs{
-		line-height: 3em;
-		/*width: 5em;*/
+		line-height: 4em;
+		width: 4em;
 	}
 	.text-block{
 		padding-bottom: 6em;
@@ -500,42 +428,36 @@ legend:before{
 		font-size: 2em;
 		line-height: 5em;
 	}
-	ul{
-		width: 340px;
-	}
+	ul{width: 340px;}
 }
-
 @media screen and (min-width: 1300px){
 
-	a{
-		font-size: 180%;
-	}
-	ul{
-		width: 350px;
-	}
+	a{font-size: 180%;}
+	#circle {
+        position: absolute;
+        bottom: 2.8%; 
+        right: 50%;
+    }
+	ul{width: 350px;}
 }
-
 @media screen and (min-width: 1500px){
 
-	p, ul, form{
-		font-size: 1.4em;
-	}
+	p, ul, form{font-size: 1.4em;}
 	.tabs{
-		line-height: 4em;
+		line-height: 4.8em;
 		width: 5em;
 	}
 }
 @media screen and (min-width: 1620px){
 
-	.grid {
-	    margin-right: 5.6em;
-  	}
-	.cell {
-	    width: 20%;
-	  }
-	.cell h3{
-		width: 290px;
-	}
+	.cell {width: 20%;}
+	.cell h3{width: 290px;}
+	#circle {
+        position: absolute;
+        bottom: 3.4%; 
+        right: 50%;
+    }
+	.grid {margin-right: 5.6em;}
 	ul{
 		margin: 0 0 1.4em .8em;
 		width: 280px;
@@ -543,10 +465,7 @@ legend:before{
 }
 @media screen and (min-width: 1680px){
 
-	.cell h3{
-		width: 320px;
-	}
-
+	.cell h3{width: 320px;}
 }
 
 
