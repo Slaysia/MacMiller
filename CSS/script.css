@@ -82,15 +82,15 @@ p{
 	--FEC7F8: #CCF;
 }
 #circle {
-		color: transparent;
         border: 3px solid #FEC7F8;
         border-radius: 50%;
+        bottom: 2%;
+        color: transparent;
+        height: 50px;
         position: absolute;
         right: 0;
-        bottom: 2%;
         width: 50px;
-        height: 50px;
-        
+        z-index: 1;
 }
 
 
@@ -198,6 +198,9 @@ ul{
 ---------------------------*/
 /*-- ****  form  **** --*/
 
+#emailHelp{ /*  in the form 'We'll never share...'  */
+	text-shadow: none;
+}
 fieldset{
 	margin-left: .6em;
 	max-width: 86%;
