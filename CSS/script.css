@@ -172,9 +172,9 @@ a:hover{
 /* About styling
 ---------------------------*/
 .about{grid-row: 2;}
-.about h1{margin-left: .2em;}
+.about h1{margin-left: .3em;}
 .about p{
-	padding: .5em;
+	padding: 1em;
 	width: 83%;
 }
 
@@ -182,10 +182,10 @@ a:hover{
 ---------------------------*/
 /*-- ****  albums  **** --*/
 
-.Albums h1{margin-left: .2em;}
+.Albums h1{margin-left: .3em;}
 .cell h3{
 	font-size: 150%;
-	margin-left: .1em;
+	margin-left: .2em;
 	width: 250px;
 }
 ul{
@@ -216,6 +216,9 @@ input, select, textarea, #ownername, #owneremail, #petname,
 	border: 1px solid #C7526B;
 	outline: 3px solid #CCF;
 }
+label{
+	margin-right: 5px;
+}
 legend{
 	font-size: 1.4em;
 	padding-top: .4em;
@@ -235,6 +238,7 @@ legend:before{
 #terms, .btn{
 	background-color: var(--primary-color);
 	margin-left: 1em;
+	margin-right: 5px
 }
 
 /* Footer styles
@@ -431,6 +435,7 @@ legend:before{
 		font-size: 2em;
 		line-height: 5em;
 	}
+	.text-block p{margin: .2em 0 3em -.034em;}
 	ul{width: 340px;}
 }
 @media screen and (min-width: 1300px){
