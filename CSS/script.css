@@ -31,7 +31,7 @@ nav, span, div, img, figure, figcaption, footer, #submit{
 	padding: 0;
 	text-decoration: none;
 }
-*, *:before, *:after {
+*, *:before, *:after{
 	box-sizing: border-box;
 }
 
@@ -81,7 +81,7 @@ p{
 	--primary-color: #52750A;
 	--FEC7F8: #CCF;
 }
-#circle {
+#circle{
         border: 3px solid #FEC7F8;
         border-radius: 50%;
         bottom: 2%;
@@ -131,7 +131,7 @@ p{
 a{
 	color: #922F44;
 	font-family: 'Shadows Into Light', cursive;
-	font-size: 110%;
+	font-size: 100%;
 	font-weight: bold;
 	line-height: 180%;
 	margin: .1em 0 .2em 0;
@@ -150,22 +150,20 @@ a:hover{
 	grid-row: 2;
 	height: 60%;
 	margin-top: 3em;
+	overflow-x: hidden;
 	padding-top: .3em;
-	position: -webkit-sticky;
-	position: sticky;
-	right: 0;
-	top: 0;
-}
-#nav-1, ul{
-	position: -webkit-sticky;
+	-webkit-position: sticky;
 	position: sticky;
 	right: 0;
 	top: 0;
 }
 .tabs{
 	display: inline-block;
-	writing-mode: vertical-lr;
+	height: 100%;
+	position: relative;
 	width: 2em;
+	writing-mode: vertical-lr;
+	overflow-x: hidden;
 }
 
 
@@ -198,9 +196,7 @@ ul{
 ---------------------------*/
 /*-- ****  form  **** --*/
 
-#emailHelp{ /*  in the form 'We'll never share...'  */
-	text-shadow: none;
-}
+#emailHelp{text-shadow: none;} /*  in the form 'We'll never share...'  */
 fieldset{
 	margin-left: .6em;
 	max-width: 86%;
@@ -309,7 +305,7 @@ legend:before{
 @media screen and (min-width: 600px){
 
 	.cell h3{width: 500px;}
-	#circle {
+	#circle{
         position: absolute;
         bottom: 2%;
         right: 50%; 
@@ -335,7 +331,7 @@ legend:before{
 		width: 290px;
 	}
 	.cell img{margin-left: .1%;}
-	#circle {
+	#circle{
         position: absolute;
         bottom: 2.5%; 
         right: 50%;
@@ -344,7 +340,7 @@ legend:before{
 		font-size: 1em;
 		margin-left: 1em;
 	}
-	.grid {
+	.grid{
 	    display: flex;
 	    flex-direction: row; 
 	    flex-wrap: wrap;
@@ -397,7 +393,7 @@ legend:before{
 @media screen and (min-width: 992px){
 
 	.cell{width: 30%;}
-	#circle {
+	#circle{
         position: absolute;
         bottom: 2.8%; 
         right: 50%;
@@ -411,7 +407,7 @@ legend:before{
 @media screen and (min-width: 1200px){
 
 	a{font-size: 180%;}
-	#circle {
+	#circle{
         position: absolute;
         bottom: 2.7%; 
         right: 50%;
@@ -441,7 +437,7 @@ legend:before{
 @media screen and (min-width: 1300px){
 
 	a{font-size: 180%;}
-	#circle {
+	#circle{
         position: absolute;
         bottom: 2.8%; 
         right: 50%;
@@ -458,14 +454,14 @@ legend:before{
 }
 @media screen and (min-width: 1620px){
 
-	.cell {width: 20%;}
+	.cell{width: 20%;}
 	.cell h3{width: 290px;}
-	#circle {
+	#circle{
         position: absolute;
         bottom: 3.4%; 
         right: 50%;
     }
-	.grid {margin-right: 5.6em;}
+	.grid{margin-right: 5.6em;}
 	ul{
 		margin: 0 0 1.4em .8em;
 		width: 280px;
