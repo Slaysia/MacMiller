@@ -338,7 +338,7 @@ legend:before{
     }
 	.Footer p{
 		font-size: 1em;
-		margin-left: 1em;
+		margin: 1em 25%;
 	}
 	.grid{
 	    display: flex;
@@ -398,7 +398,7 @@ legend:before{
         bottom: 2.8%; 
         right: 50%;
     }
-	.Footer p{margin-left: 10%;}
+	.Footer p{margin: 1em 35%;}
 	ul{
 		margin: 0 0 1.4em 1.1em;
 		width: 330px;
@@ -442,6 +442,7 @@ legend:before{
         bottom: 2.8%; 
         right: 50%;
     }
+    .Footer p{margin: 1em 38%;}
 	ul{width: 350px;}
 }
 @media screen and (min-width: 1500px){
@@ -470,8 +471,12 @@ legend:before{
 @media screen and (min-width: 1680px){
 
 	.cell h3{width: 320px;}
+	.Footer p{margin: 1em 40%;}
 }
+@media screen and (min-width: 1800px){
 
+	.Footer p{margin: 1em 42.7%;}
+}
 
 
 
